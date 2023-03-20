@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <style>
+            .container{
+                display: grid;
+                grid-template-rows: 10% 80% 10%;
+                height: 900px;
+            }
+            .title{
+                width: 100%;
+                background-color:black;
+                color: aliceblue;
+                font-size: x-large;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px;
+                padding-left: 50px;
+            }
+            .footer{
+                background-color:  darkslategray;
+            }
+            .main{
+                display: grid;
+                grid-template-columns: 20% 60% 80%;
+                width: 100%;
+                height: 700px;
+            }
+            .d1{
+                display: grid;
+                grid-template-columns: 20% 60% 20%;
+            }
+            .traffic{
+                grid-area: 3/2/7/3;
+                display: grid;
+                background-color: black;
+                grid-template-rows: auto auto auto;
+                border-radius: 50px;
+                margin-bottom: 140px;
+            }
+            .remaining1{
+                grid-area: 1/1/2/4;
+            }
+            .remaining{
+                grid-area: 7/2/9/3;
+            }
+            .traffic>div{
+                margin: 10px;
+                border: 1px solid black;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+            }
+            .red{
+                background-color: red;
+                opacity: 0.7;
+            }
+            .yellow{
+                background-color: yellow;
+                opacity: 0.7;
+            }
+            .green{
+                background-color: lightgreen;
+                opacity: 0.8;
+            }
+            .d2{
+                display: grid;
+                grid-template-rows: auto auto;
+            }
+            .abb{
+                font-family: cursive;
+            }
+            #int{
+                text-align: center;
+                font-size: xx-large;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .rules{
+                background-color: gainsboro;
+                margin: 200px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 150px;
+            }
+            #set{
+                list-style-type: circle;
+            }
+            .things{
+                display: grid;
+                grid-template-columns: 20% 60% 20%;
+                height: 230px;
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .user{
+                background-color: gainsboro;
+            }
+            .drive
+            {
+                height: 300px;
+                width: 300px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: xx-large;
+                text-align: center;
+                background-color: grey;
+                margin-top: 200px;
+                margin-right: 400px;
+                padding: 10px;
+                padding-top: 15px;
+            }
+            .sub{
+                background-color: limegreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                TNSTC <div class="abb">Tamil Nadu State Transport Corporation</div>
+            </div>
+            <div class="main">
+                <div class="d1">
+                    <div class="remaining1"></div>
+                    <div class="traffic">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="remaining"></div>
+                </div>
+                <div class="d2">
+                    <p id="int">WELCOME TO TRAFFIC PENALTY</p>
+                    <div class="things">
+                        <div class="empty"></div>
+                        <div class="user">
+                            <label for="uname">Username</label>
+                            <br>
+                            <input type="text" name="uname" id="uname">
+                            <br>
+                            <label for="pass">Password</label>
+                            <br>
+                            <input type="password" id="pass">
+                            <br><br>
+                            <input type="submit" value="SIGN IN" class="sub">
+                            <br><br>
+                            <input type="checkbox" id="rem">
+                            <label for="rem">Remember me</label>
+                            <p>Do not have an account?</p>
+                            SIGN UP
+                        </div>
+                        <div class="empty1"></div>
+                    </div>
+                    <div class="rules">
+                        <ul id="set">
+                            <li>Do Not Drink and Drive</li>
+                            <li>Always Own Valid Insurance Policy</li>
+                            <li>Do not ride a Two-Wheeler without a Helmet On</li>
+                            <li>Do not use a Mobile Phone while Riding</li>
+                            <li>Follow the Rules of “No Entry” Zone</li>
+                            <li>Do not Jump the Red Light</li>
+                            <li>Do not Over Speed</li>
+                            <li>Wear your seatbelt while Driving a Car</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d3">
+                    <div class="drive">
+                        <h1>DRIVE SAFELY!!!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+         
+    </body>
+</html>

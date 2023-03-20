@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <style>
+            .back{
+                float: left;
+                margin-top: 300px;
+                height: 50px;
+                width: 80px;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                text-align: center;
+            }
+            body{
+                background-color: lightgrey;
+            }
+            .container{
+                background-color: white;
+                margin: auto;
+                display: grid;
+                grid-template-rows: 5% 95%;
+                border: 2px solid black;
+                width: 600px;
+                height: 700px;
+            }
+            .container>div{
+                margin: 10px;
+            }
+            .sub1{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .sub2{
+                display: grid;
+                grid-template-rows: 45% 45% 10%;
+                border: 1px solid black;
+            }
+            .sub2>div{
+                border: 1px solid black;
+                padding: 5px;
+            }
+            .sub22{
+                display: grid;
+                grid-template-rows: 20% 80%;
+            }
+            .sub221,.sub222{
+                padding: 10px;
+                border-bottom: 1px solid black;
+            }
+            .sub221{
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="back">
+                <p><b>Back</b>
+            </div>
+            <div class="container">
+                <div class="sub1">Driver's Offense Ticket Details</div>
+                <div class="sub2">
+                    <div class="sub21">
+                        <p>Ticket No: 12356789</p><p>Date-time: Aug 18,2022</p>
+                        LicenseID:CDM-062314
+                        <p>Name: Vijayakumaran S</p>
+                        <p>Officer ID: OFC-789456123</p>
+                        <p>Officer's Name: Kaushik B</p>
+                        <p>
+                            Ticket Status: <b>PAID</b>
+                        </p>
+                    </div>
+                    <div class="sub22">
+                        <div class="sub221">Offence list</div>
+                        <table>
+                            <tr>
+                                <th>Code</th>
+                                <th>Offense</th>
+                                <th>Fine</th>
+                            </tr>
+                            <tr>
+                                <td>OT-1001</td>
+                                <td>Driving without License</td>
+                                <td>650.00</td>
+                            </tr>
+                            <tr>
+                                <td>TO-1002</td>
+                                <td>Running over speed limit</td>
+                                <td>1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td>Total</td>
+                                <td>1,650.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="sub23">
+                        <b>Remarks:</b>
+                        <p>Sample Traffic Offense Record Only.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
